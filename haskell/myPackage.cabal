@@ -1,0 +1,36 @@
+cabal-version:      3.0
+
+name:               myPackage
+version:            0.0.0
+synopsis:           TODO
+-- category:           Other
+
+license:            AGPL-3.0-or-later
+license-file:       LICENSE
+
+author:             Carter "pyrotelekinetic" Ison
+maintainer:         carter@isons.org
+copyright:          (C) YEAR  Carter "pyrotelekinetic" Ison <carter@isons.org>
+
+extra-doc-files:    README.md
+
+build-type:         Simple
+
+executable myPackage
+    hs-source-dirs:   app
+    main-is:          Main.hs
+
+    -- other-modules:
+
+    -- Libraries are locked with 'cabal freeze' to the version provided by nix.
+    build-depends:
+        , base
+    default-extensions:
+        OverloadedStrings
+        LambdaCase
+    ghc-options:
+        -Wall
+        -Wno-unused-do-bind
+        -Wno-name-shadowing
+
+    default-language: GHC2021
