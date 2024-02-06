@@ -8,6 +8,10 @@ outputs = _: {
       path = ./haskell;
       description = "Haskell flake using cabal2nix";
     };
+    rust = {
+      path = ./rust;
+      description = "Rust flake using cargo";
+    };
   };
 };
 
