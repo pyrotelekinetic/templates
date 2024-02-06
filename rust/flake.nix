@@ -17,9 +17,8 @@ in {
   });
 
   devShells = allSystems (pkgs: {
-    default = pkgs.mkShell {
+    default = pkgs.mkShellNoCC {
       nativeBuildInputs = with pkgs; [
-        rustc
         cargo
         cargo-watch
       ];
