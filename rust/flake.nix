@@ -21,6 +21,7 @@ in {
       nativeBuildInputs = with pkgs; [
         cargo
         cargo-watch
+        clippy
       ];
     };
   });
