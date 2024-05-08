@@ -23,6 +23,7 @@ in {
         cargo-watch
         clippy
       ];
+      RUST_BACKTRACE = 1;
     };
   });
 };
