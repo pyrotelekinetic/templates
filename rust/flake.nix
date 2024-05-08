@@ -17,8 +17,10 @@ in {
   });
 
   devShells = allSystems (pkgs: {
-    default = pkgs.mkShellNoCC {
-      nativeBuildInputs = with pkgs; [
+    default = pkgs.mkShell {
+      inherit (self.outputs.packages.${pkgs.system}.default)
+        nativeBuildInputs buildInputs;
+      packages = with pkgs; [
         cargo
         cargo-watch
         clippy
