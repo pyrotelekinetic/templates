@@ -26,6 +26,7 @@ in {
         rustc
         cargo
         cargo-watch
+        rustfmt
         clippy
       ];
       RUST_BACKTRACE = 1;
