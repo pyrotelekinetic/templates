@@ -23,6 +23,7 @@ in {
       inherit (self.outputs.packages.${pkgs.system}.default)
         nativeBuildInputs buildInputs;
       packages = with pkgs; [
+        rustc
         cargo
         cargo-watch
         clippy
