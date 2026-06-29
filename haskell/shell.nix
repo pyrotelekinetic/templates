@@ -10,6 +10,7 @@ haskellPackages.shellFor {
   nativeBuildInputs = with haskellPackages; [
     ghc
     ghcid
+    haskell-language-server
     hlint
     cabal-install
   ];
